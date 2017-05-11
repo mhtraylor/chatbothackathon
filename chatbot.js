@@ -23,7 +23,7 @@ dialog.matches('TestIntent',[
 		var intent = args.intent;
         var email = builder.EntityRecognizer.findEntity(args.entities, 'customer-email');
         var a = args.entities[0].entity == 'email';
-		session.send("Your email is " + );
+		session.send("Your email is " + email);
 	}]);
 
 dialog.matches('Price',[
